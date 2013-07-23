@@ -1,0 +1,18 @@
+# use glob syntax.
+syntax: glob
+
+*.pyc
+*.pyo
+*~
+*.bak
+*.1
+.*
+#*
+cron/*
+languages/*
+sessions/*
+uploads/*
+errors/*
+cache/*
+databases/*
+views/generic.*

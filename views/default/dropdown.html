@@ -1,0 +1,24 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin {{=request.function}}</h1>
+
+<p>
+This plugin lets you add items to a dropdown list (referenced table) when editing a form. Here is an example:
+
+{{=form}}
+</p>
+
+<h2>Usage</h2>
+
+All you need to do is, before defining the form:
+
+{{=CODE("""
+db.table.field.comment=PluginDropdown(db.table.field)
+""".strip())}}
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>
+

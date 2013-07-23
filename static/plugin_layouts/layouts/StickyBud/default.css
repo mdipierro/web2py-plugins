@@ -1,0 +1,308 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #7F7772 url(images/img01.gif) repeat-x;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #FFFFFF;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	font-weight: normal;
+	color: #000000;
+}
+
+h1 {
+	font-size: 197%;
+}
+
+h2 {
+	font-size: 136%;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+p, ul, ol {
+	margin-bottom: 1.6em;
+	line-height: 180%;
+}
+
+p {
+}
+
+blockquote {
+	font-style: italic;
+}
+
+ul {
+}
+
+ol {
+}
+
+a {
+	color: #FFBF23;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+small {
+}
+
+hr {
+	display: none;
+}
+
+img {
+	border: 1px solid #B2B2B2;
+}
+
+img.left {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 15px;
+}
+
+/* header */
+
+#header {
+	width: 700px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	float: left;
+}
+
+#logo h1, #logo h2 {
+	margin: 0;
+}
+
+#logo h1 {
+	padding-top: 15px;
+	font-size: 36px;
+}
+
+#logo h2 {
+}
+
+#logo a {
+	text-decoration: none;
+	color: #7F7772;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 290px;
+	padding-top: 40px;
+}
+
+#search form {
+	margin: 0;
+	padding: 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search legend {
+	display: none;
+}
+
+#searchinput, #searchsubmit {
+	font: bold 100% Georgia, "Times New Roman", Times, serif;
+}
+
+#searchinput {
+	padding: 2px 5px;
+	width: 198px;
+	color: #7F7772;
+}
+
+#searchsubmit {
+}
+
+/* Menu */
+
+#menu {
+	width: 700px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 15px 0 0 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	padding: 0 20px 0 10px;
+	background: url(images/img02.gif) no-repeat left center;
+	text-align: center;
+	text-decoration: none;
+	font-size: 154%;
+	color: #F8DFC9;
+}
+
+#menu a:hover {
+	color: #FFFFFF;
+}
+
+#menu .active a {
+	color: #990000;
+}
+
+/* Page */
+
+#page {
+	clear: both;
+	width: 720px;
+	margin: 0 auto 20px auto;
+	padding: 131px 0 0 0;
+	background: url(images/img03.jpg) no-repeat;
+}
+
+/* Splash */
+
+#splash {
+	width: 660px;
+	height: 180px;
+	padding: 30px 30px 0 30px;
+	background: url(images/img04.jpg) no-repeat;
+}
+
+.twocols {
+}
+
+.twocols .title {
+}
+
+.twocols .col1 {
+	float: left;
+	width: 320px;
+}
+
+.twocols .col2 {
+	float: right;
+	width: 320px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 420px;
+	padding-right: 10px;
+}
+
+.title {
+	padding-bottom: 5px;
+}
+
+.list {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.list li {
+	padding-left: 10px;
+	background: url(images/img10.gif) no-repeat left center;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 240px;
+	padding: 10px 0 0 10px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	padding: 5px 0;
+}
+
+#sidebar h2 {
+	font-size: 114%;
+	font-weight: bold;
+}
+
+#sidebar h3 {
+	margin: 0;
+}
+
+#sidebar p {
+	margin: 0;
+	line-height: normal;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	height: 100px;
+	padding-top: 20px;
+	background: #FFFFFF;
+	color: #666666;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: 77%;
+}
+
+#footer a {
+	color: #666666;
+}

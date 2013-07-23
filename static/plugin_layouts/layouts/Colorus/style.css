@@ -1,0 +1,31 @@
+body { margin:114px 0 0 0; line-height:16px; font-family: Tahoma, Arial; background: url(images/body_top_bckg.jpg) no-repeat center top #171c20; color:#bed7e6; font-size:11px;}
+a { color:#018BC1;}
+a:hover { text-decoration:none;}
+#header {}
+#logo { padding:30px 0 120px 0;color:#fff; text-align:center;}
+#logo a{ color:#fff; text-decoration:none; font-weight:bold; font-size:24px; text-transform:uppercase; }
+#menu {color:#fff; text-align:center; margin-bottom:62px;}
+#menu ul {text-align:center;list-style:none; padding:0;}
+#menu ul li {display:inline}
+#menu ul a { font-weight:bold; font-size:14px; text-decoration:none; color:#fff; background-color:#445d6c; padding:0 10px 2px 10px;}
+#menu ul a:hover { background-color:#f26513;}
+#main {background: url(images/body_all_bckg.jpg) repeat-y top center;}
+#content {width:780px; margin:0 auto;}
+#text { width:520px;}
+#text p { margin:7px 0 7px 0;}
+#text li {background:url(images/li.gif) no-repeat 0px 7px;}
+#sidebar {float:right; width:227px; background-color:#0b0e10; margin:10px 10px 0 0; }
+#sidebar_top { width:227px; height:40px; background:url(images/sidebar_top.jpg) no-repeat;}
+#sidebar_text { padding: 0 30px;}
+#sidebar_text p { margin:5px 0 5px 0;}
+#sidebar_bottom { width:227px; height:57px; background:url(images/sidebar_bottom.jpg) no-repeat;}
+#sidebar h2 { font-size:13px; text-transform:uppercase; color:#fff; margin:20px 0 0 0; padding:0; background:none;}
+h1 {margin:30px 0 0 0; padding:5px 0 7px 45px; text-transform:uppercase; font-size:24px; color:#fff; background:url(images/h1_bckg.jpg) no-repeat;}
+
+#footer {background:url(images/footer_bckg.jpg) no-repeat top center; height:102px; clear:both; width:780px; margin:0 auto; }
+#left_footer { float:left; padding:60px 0 0 30px; color:#fff; font-size:12px;}
+#left_footer a { color:#fff;}
+#left_footer a:hover { text-decoration:none;}
+#right_footer { float:right;  padding:60px 30px 0 0; color:#fff;  font-size:12px; text-align:right;}
+#right_footer a { color:#fff;}
+#right_footer a:hover { text-decoration:none;}

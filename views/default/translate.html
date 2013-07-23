@@ -1,0 +1,18 @@
+{{extend 'layout.html'}}
+
+<h1>Demo Plugin Translate</h1>
+{{=plugin_translate(languages=[('en','English'),('es','Spanish'),('fr','French'),('de','German')])}}
+
+<h1>Source code</h1>
+
+{{=CODE(''.join(open(os.path.join(request.folder,'views/default/%s.html' % request.function),'r').readlines()[:-7]))}}
+
+This should not be confused with web2py internationalization capabilities. This plugin does the following:
+<ul>
+<li>Displays a language selection widget</li>
+<li>If the selected language does NOT have a web2py translation file it asks Google to translate the page</li>
+<li>Translation is done client-side</li>
+</ul>
+
+<h1>Download Plugin</h1>
+[<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>]

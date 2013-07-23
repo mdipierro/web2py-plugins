@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin {{=request.function}}</h1>
+
+<p>
+Undocumented
+</p>
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>
+

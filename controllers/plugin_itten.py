@@ -1,0 +1,1 @@
+def style(): return dict()

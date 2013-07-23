@@ -1,0 +1,59 @@
+(dp1
+S'auth_user'
+p2
+(dp3
+S'length'
+p4
+I512
+sS'unique'
+p5
+I00
+sS'sortable'
+p6
+I2
+sS'sql'
+p7
+S'INTEGER REFERENCES auth_user (id) ON DELETE CASCADE'
+p8
+sS'notnull'
+p9
+I00
+sS'type'
+p10
+S'reference auth_user'
+p11
+ssS'tag'
+p12
+(dp13
+g4
+I512
+sg5
+I00
+sg6
+I3
+sg7
+S'INTEGER REFERENCES plugin_tagging_tag (id) ON DELETE CASCADE'
+p14
+sg9
+I00
+sg10
+S'reference plugin_tagging_tag'
+p15
+ssS'id'
+p16
+(dp17
+g4
+I512
+sg5
+I00
+sg6
+I1
+sg7
+S'INTEGER PRIMARY KEY AUTOINCREMENT'
+p18
+sg9
+I00
+sg10
+S'id'
+p19
+ss.

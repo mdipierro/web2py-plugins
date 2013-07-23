@@ -1,0 +1,376 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	background: #809315 url(images/img01.jpg) repeat-x top left;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+input, textarea {
+	width: 220px;
+	background: #FFFFFF url(images/img04.gif) repeat-x;
+	border-top: 1px solid #A3A3A3;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #D6D6D6;
+	font: normal 1em/normal "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6E6E6E;
+}
+
+h1, h2, h3 {
+}
+
+h1, h1 a, h2, h2 a {
+	text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+	line-height: 190%;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin-right: 20px;
+}
+
+img.right {
+	float: right;
+	margin-right: 20px;
+}
+
+hr {
+	display: none;
+}
+
+#header {
+	width: 960px;
+	height: 206px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) no-repeat top left;
+}
+
+/* Logo */
+
+#logo {
+	width: 870px;
+	height: 152px;
+	margin: 0 auto;
+}
+
+#logo h1, #logo h2 {
+	margin: 0;
+}
+
+#logo h1 {
+	float: left;
+	padding-top: 75px;
+	padding-left: 50px;
+	font-weight: normal;
+	text-transform: lowercase;
+}
+
+#logo h2 {
+	float: left;
+	padding-top: 95px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#logo h2, #logo h2 a {
+	color: #FFFFFF;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 23px 0 0 28px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0 2px 0 2px;
+}
+
+#menu li.first a{
+	float: left;
+	background: #619E00;
+	padding: 9px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#menu a {
+	float: left;
+	background: #406800;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	background: #619E00;
+	padding: 9px 20px;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 200px;
+}
+
+#search form {
+	margin: 0;
+	padding: 0;
+	margin-top: -10px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search input {
+}
+
+#search #s {
+	width: 150px;
+}
+
+#search #x {
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	background: #406800;
+	color: #FFFFFF;
+}
+
+/* Banner */
+
+#banner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding: 45px 35px 0 25px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 603px;
+}
+
+.post {
+}
+
+.post .title {
+	margin: 0;
+	padding: 20px 20px 0 20px;
+	background: url(images/img04.gif) no-repeat left 100%;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.post .title a:hover {
+	text-decoration: none;
+}
+
+.post .entry {
+	padding: 0 20px;
+}
+
+.post .meta {
+	height: 25px;
+	margin: 15px 0 20px 0;
+	padding: 10px 0 0 20px;
+	background: #4E9FC8 url(images/img07.gif) no-repeat;
+	line-height: normal;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 250px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 40px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 5px 20px;
+}
+
+#sidebar li h2 {
+	height: 30px;
+	margin-bottom: 15px;
+	padding: 5px 0px 0px 20px;
+	background: #4E9FC8 url(images/img03.jpg) no-repeat;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+
+#sidebar li p {
+	padding: 0 20px;
+}
+
+/* Calendar */
+
+#sidebar #calendar {
+	padding: 0;
+}
+
+#calendar caption {
+}
+
+#calendar table {
+	width: 100%;
+	padding: 0 20px;
+	text-align: center;
+}
+
+#calendar thead th {
+	border-bottom: 2px solid #F2F2F2;
+	border-top: 1px solid #F2F2F2;
+}
+
+#calendar tbody td {
+	padding: 5px 0;
+	border-bottom: 1px solid #F2F2F2;
+}
+
+#calendar tfoot td {
+	border-top: 1px solid #F2F2F2;
+}
+
+#calendar #prev {
+	text-align: left;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+#calendar a {
+	font-weight: bold;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 870px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 35px 45px;
+	border-top: 5px solid #4E9FC8;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #406800;
+}
+
+#footer .legal {
+	float: left;
+}
+
+#footer .credit {
+	float: right;
+}

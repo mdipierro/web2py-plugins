@@ -1,0 +1,333 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #FFFFFF url(images/img01.gif) repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #6E6E6E;
+}
+
+input, textarea {
+	background: #FFFFFF url(images/img09.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	border-top-color: #A3A3A3;
+	border-left-color: #D6D6D6;
+	font: normal 1em/normal "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6E6E6E;
+}
+
+h1, h2, h3 {
+	margin-bottom: 1.5em;
+	letter-spacing: -0.05em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1, h1 a, h2, h2 a {
+	text-decoration: none;
+	color: #414141;
+}
+
+h1 a:hover, h2 a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #939292;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+	line-height: 190%;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #346086;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin-right: 20px;
+}
+
+img.right {
+	float: right;
+	margin-right: 20px;
+}
+
+hr {
+	display: none;
+}
+
+/* Logo */
+
+#logo {
+	width: 870px;
+	height: 135px;
+	margin: 0 auto;
+}
+
+#logo h1, #logo h2 {
+	margin: 0;
+}
+
+#logo h1 {
+	float: left;
+	padding-top: 75px;
+}
+
+#logo h2 {
+	float: right;
+	padding-top: 95px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#logo h2, #logo h2 a {
+	color: #939292;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 960px;
+	height: 62px;
+	margin: 0 auto;
+	background: #252E3A url(images/img02.jpg) no-repeat;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 21px 0 0 30px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	padding: 0 20px 0 22px;
+	background: url(images/img03.gif) no-repeat left center;
+}
+
+#menu li.first {
+	background: none;
+}
+
+#menu a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 227px;
+}
+
+#search fieldset {
+	border: none;
+}
+
+#search input {
+	float: left;
+}
+
+#search #s {
+	width: 136px;
+	margin-right: 7px;
+	padding: 2px 5px;
+}
+
+#search #x {
+	background: none;
+	border: none;
+}
+
+/* Banner */
+
+#banner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 8px 0;
+}
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding: 45px 35px 45px 25px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 603px;
+}
+
+.post {
+}
+
+.post .title {
+	margin: 0;
+	padding: 0 20px;
+}
+
+.post .entry {
+	padding: 0 20px;
+}
+
+.post .meta {
+	height: 47px;
+	margin: 20px 0 40px 0;
+	padding: 15px 0 0 20px;
+	background: url(images/img07.gif) no-repeat;
+	line-height: normal;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 253px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 40px;
+	padding: 0 15px 0 20px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#sidebar li h2 {
+	margin-bottom: 15px;
+	font-size: 18px;
+}
+
+/* Calendar */
+
+#sidebar #calendar {
+	padding: 0;
+	background: url(images/img08.jpg) no-repeat;
+}
+
+#calendar caption {
+	margin: -20px auto 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+#calendar table {
+	margin: 0 auto;
+	caption-side: bottom;
+}
+
+#calendar thead th {
+	width: 31px;
+	height: 40px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#calendar tbody td {
+	width: 31px;
+	height: 31px;
+	text-align: center;
+	color: #9E9E9E;
+}
+
+#calendar tfoot td {
+	padding-top: 20px;
+	font-weight: bold;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 870px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 35px 45px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	color: #B4B4B4;
+}
+
+#footer a {
+	color: #B4B4B4;
+}
+
+#footer .legal {
+	float: left;
+}
+
+#footer .credit {
+	float: right;
+}

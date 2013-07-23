@@ -1,0 +1,349 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FCA4F7;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333333;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+ul {
+	list-style-image: url(images/img07.gif);
+}
+
+a {
+	text-decoration: none;
+	color: #D21AC7;
+}
+
+a:hover {
+	border-bottom: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+/* Header */
+
+#logo {
+	width: 960px;
+	height: 58px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+#logo h1, #logo p {
+	float: left;
+	margin: 0;
+	color: #393019;
+}
+
+#logo h1 {
+	padding: 0px 0 0 20px;
+	text-transform: lowercase;
+	font-weight: normal;
+	font-size: 3em;
+}
+
+#logo p {
+	text-transform: uppercase;
+	padding: 22px 0 0 3px;
+	font-size: 10px;
+	color: #616161;
+}
+
+#logo a {
+	border: none;
+	text-decoration: none;
+	color: #393019;
+}
+
+/* Menu */
+
+#menu {
+	width: 980px;
+	height: 55px;
+	margin: 0 auto;
+	padding-top: 8px;
+	background: url(images/img01.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0 0 0 10px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin: 0 3px 0 0;
+	padding: 6px 15px 10px 20px;
+	border: none;
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	margin: 0 3px 0 0;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	margin: 0 3px 0 0;
+	color: #FFFFFF;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#page-bg {
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px solid #E7E7E7;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 540px;
+	padding: 0 0 0  10px;
+}
+
+.post {
+	margin-bottom: 20px;
+	padding: 10px 0;
+	line-height: 200%;
+	background: #FFFFFF;
+}
+
+.post h1 {
+	font-weight: normal;
+}
+
+.title {
+	margin: 0;
+	padding: 10px 0 0 20px;
+	font-weight: normal;
+}
+
+.title a {
+	border-bottom: none;
+	color: #D21AC7;
+}
+
+.title a:hover {
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+.byline {
+	margin: 0 20px 0px 20px;
+}
+
+.entry {
+	padding: 0 20px;
+}
+
+.links {
+	padding-top: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.links a {
+	border: none;
+}
+
+.links a:hover {
+	border-bottom: 1px dotted #CCCCCC;
+}
+
+/* Sidebars */
+
+.sidebar {
+	float: right;
+	width: 200px;
+	padding: 0;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 0 0 20px 0;
+}
+
+.sidebar li ul {
+}
+
+.sidebar li li {
+	margin: 0 20px 0 15px;
+	padding: 8px 0px;
+	border-bottom: 1px #787367 dashed;
+}
+
+
+.sidebar li h2 {
+	height: 37px;
+	margin: 0 0 0 0;
+	padding: 9px 15px 10px 20px;
+	background: url(images/img02.jpg) no-repeat left top;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#sidebar p {
+	padding: 0 20px;
+}
+
+#sidebar1 a, #sidebar2 a {
+	color: #393019;
+}
+
+/* Search */
+
+#searchform {
+	margin: 0;
+	padding: 0;
+}
+
+#searchform br {
+	display: none;
+}
+
+#s {
+	margin: 0 0px 0 15px;
+	padding: 2px 2px;
+	width: 90px;
+	height: 18px;
+	font-size: 10px;
+	color: #CCCCCC;
+}
+
+#x {
+	margin: 0;
+	padding: 2px 5px;
+	height: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+/* Calendar */
+
+#calendar_wrap {
+	padding: 0 15px;
+	text-align: center;
+}
+
+#calendar_wrap table {
+	width: 100%;
+}
+
+#calendar_wrap th {
+}
+
+#calendar_wrap td {
+}
+
+#calendar_wrap tfoot td {
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev {
+	text-align: left;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#prev a {
+	border: none;
+}
+
+#calendar_wrap tfoot td#next {
+	text-align: right;
+	font-weight: bold;
+	border: none;
+}
+
+#calendar_wrap tfoot td#next a {
+	border: none;
+}
+
+/* Footer */
+
+#footer {
+	height: 55px;
+	margin: 0 auto;
+	background: #CC1AC2;
+}
+
+#footer p {
+	margin: 0;
+	padding: 15px 0 0 0;
+	text-align: center;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

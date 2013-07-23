@@ -1,0 +1,44 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin Locking</h1>
+<p>
+This plugin allows to lock a record so that two distinct users cannot access it at the same time.
+The record is kept locked by an ajax keepalize signal.
+</p>
+
+{{=plugin_locking('test')}}
+
+<h1>Example Source code (user code)</h1>
+
+Here is an example of an action that locks a record (tablename, record_id) for one hour (3600 seconds) and renews the lock via ajax every 60 seconds. If the page that perform the ajax requests is closed, the lock is released in 60 seconds.
+
+<h2>Controller: default.py</h2>
+
+{{=CODE("""
+def index():
+    lock=plugin_locking('tablename',record_id,locktime=60,expiration=3600)
+    if not lock:
+         session.flash="record tablename.id==%s locked by other user" % record_id
+         redirect(....)
+    return dict(lock=lock)
+""".strip())}}
+
+<p>plugin_locking returns None if it fails to acquire the lock</p>
+
+<h2>View: default/index.html</h2>
+
+{{=CODE("""
+<<extend 'layout.html'>>
+
+<<=lock>>
+
+""".strip().replace('<','{').replace('>','}'))}}
+
+<p>The lock returned by the plugin_locking is a piece of javascript code that performs the ajax keepalive and it must be embedded in the page</p>
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.locking.w2p')}}">download</a>
+

@@ -1,0 +1,12 @@
+{{extend 'layout.html'}}
+
+<h1>Demo Plugin Video</h1>
+
+{{=plugin_mediaplayer(URL(r=request,c='static',f='plugin_mediaplayer/planets.flv'),320,260)}}
+
+<h1>Source code</h1>
+
+{{=CODE(''.join(open(os.path.join(request.folder,'views/default/%s.html' % request.function),'r').readlines()[:-7]))}}
+
+<h1>Download Plugin</h1>
+[<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>]

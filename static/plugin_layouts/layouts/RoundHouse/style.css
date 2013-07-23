@@ -1,0 +1,361 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px;
+	background: #FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	margin-top: 1.5em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #40C1D4;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #D8B077;
+}
+
+/* Header */
+
+#header {
+	height: 100px;
+	background: url(images/img01.gif) repeat-x left bottom;
+}
+
+#logo {
+	float: left;
+	height: 50px;
+}
+
+#logo h1, #logo h2 {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+#logo h1 {
+	padding: 10px 0 0 0;
+	letter-spacing: -2px;
+	font-size: 2.4em;
+}
+
+#logo h2 {
+	padding: 22px 0 0 5px;
+	letter-spacing: -1px;
+	font-size: 1.4em;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #40C1D4;
+}
+
+#menu {
+	float: left;
+	clear: left;
+	height: 50px;
+	background: url(images/img02.gif) no-repeat;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	float: left;
+	display: block;
+	margin: 14px 10px 0 10px;
+	padding: 0 10px;
+	background: #40C1D4;
+	text-decoration: none;
+	letter-spacing: -1px;
+	font-size: 1.4em;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	background: #0083A9;
+}
+
+#search {
+	float: right;
+	width: 200px;
+	height: 100px;
+	background: url(images/img03.gif);
+}
+
+#search h2 {
+	margin: 0;
+}
+
+#search form {
+	padding: 20px 0 0 20px;
+}
+
+#search fieldset {
+	border: none;
+}
+
+#search legend {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#search #s {
+	width: 140px;
+	height: 30px;
+	padding: 10px 10px 0 10px;
+	background: #B5E6EE;
+	border-top: 1px solid #B9E7EF;
+	border-left: 1px solid #B9E7EF;
+	border-right: 1px solid #C1EBF1;
+	border-bottom: 1px solid #C1EBF1;
+	font: bold 1.2em Georgia, "Times New Roman", Times, serif;
+	color: #0083A9;
+}
+
+#search #x {
+	display: none;
+}
+
+/* Page */
+
+#page {
+	padding: 30px 0;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 60%;
+	padding-right: 5%;
+}
+
+.post {
+}
+
+.post .meta {
+	margin: 0;
+	text-align: center;
+	font: bold 11px/normal Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+}
+
+.post .meta a {
+	color: #CCCCCC;
+}
+
+.post .title {
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 2.4em;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.post .title a {
+	text-decoration: none;
+}
+
+.post .title a:hover {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.post .entry {
+	padding: 20px;
+	line-height: 200%;
+}
+
+.post .links {
+	margin: 0;
+	padding: 10px 0;
+	font-weight: bold;
+	border-bottom: 1px solid #EEEEEE;
+	text-align: center;
+}
+
+.post .tags {
+	margin: 0;
+	padding: 10px 0;
+	font-size: .8em;
+	text-align: center;
+}
+
+.post .tags a {
+	padding-left: 10px;
+}
+
+/* Sidebar */
+
+#sidebar {
+	margin-right: 70%;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin-bottom: 20px;
+	background: url(images/img05.gif) no-repeat;
+}
+
+#sidebar li ul {
+	padding: 10px;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 5px 10px;
+	background: none;
+	border-bottom: 1px dotted #EEEEEE;
+}
+
+#sidebar h2 {
+	height: 35px;
+	margin: 0;
+	padding: 15px 0 0 20px;
+	background: url(images/img06.gif) no-repeat right top;
+	color: #FFFFFF;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: none;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+	padding: 5px 0;
+}
+
+#calendar thead th {
+	border-top: 2px solid #EEEEEE;
+	border-bottom: 2px solid #EEEEEE;
+}
+
+#calendar tfoot td {
+	border-top: 2px solid #EEEEEE;
+}
+
+#calendar tbody td {
+	border-bottom: 1px dotted #EEEEEE;
+}
+	
+#calendar tbody a {
+	font-weight: bold;
+}
+
+#calendar #today {
+	background: #EEEEEE;
+	font-weight: bold;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+#calendar #prev {
+	text-align: left;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	height: 50px;
+	background: #40C1D4 url(images/img07.gif);
+	color: #FFFFFF;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0 20px;
+	line-height: normal;
+}
+
+#footer .legal {
+	float: left;
+	height: 32px;
+	padding-top: 18px;
+	background: url(images/img08.gif) no-repeat;
+}
+
+#footer .credits {
+	float: right;
+	height: 32px;
+	padding-top: 18px;
+	background: url(images/img09.gif) no-repeat right top;
+}
+
+#footer a {
+	color: #FFFFFF;
+}

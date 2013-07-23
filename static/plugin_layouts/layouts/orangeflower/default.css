@@ -1,0 +1,191 @@
+/*
+Template Design by TheWebhub.com
+http://www.thewebhub.com
+Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines
+*/
+
+/** Common Styles */
+
+body {
+	margin: 20px 0 0 0;
+	padding: 0;
+	background: #EEEDED;
+	line-height: 1.6em;
+	text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #757575;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #F06C00;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+a {
+	color: #F06C00;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/** HEADER */
+
+#header {
+	width: 840px;
+	height: 230px;
+	margin: 0px auto;
+	background: url(images/image01.jpg) no-repeat left top;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#header h1 {
+	float: left;
+	margin: 0px;
+	padding: 207px 0px 0px 50px;
+	text-transform: uppercase;
+	font-size: 38px;
+	color: #FFFFFF;
+}
+
+#header h2 {
+	float: right;
+	margin: 0px;
+	padding: 213px 40px 0px 0px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+/** MENU */
+
+#menu {
+	width: 840px;
+	height: 50px;
+	margin: 0px auto;
+	background: url(images/image02.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0px 0px 0px 50px;
+	padding: 0px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	background: #E86800;
+	margin-top: 10px;
+	margin-right: 3px;
+	padding: 5px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	color: #FFFFFF;
+}
+
+/** CONTENT */
+
+#content-wrap {
+	width: 840px;
+	margin: 0 auto;
+	background: url(images/image03.jpg) repeat-y left top;
+}
+
+#content {
+	width: 740px;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+
+#columnA {
+	float: right;
+	width: 500px;
+}
+
+#columnA h2 {
+	border-bottom: 1px #FFA66B dashed;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#columnB {
+	float: left;
+	width: 200px;
+}
+
+#columnB h2 {
+	border-bottom: 1px #FFA66B dashed;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#columnB strong {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #575757;
+}
+
+
+/** FOOTER */
+
+#footer {
+	width: 840px;
+	height: 70px;
+	margin: 0px auto;
+	background: url(images/image04.jpg) no-repeat left top;
+	font-size: 11px;
+	color: #000000;
+}
+
+#footer p {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+#footer .copyright {
+	float: left;
+	margin: 50px 0px 0px 30px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+#footer .links {
+	float: right;
+	margin: 50px 30px 0px 0px;
+	padding-right: 20px;
+	text-align: center;
+}
+
+#footer .css {
+	padding-left: 20px;
+}
+
+#footer .xhtml {
+	padding-left: 20px;
+}
+
+#footer a {
+}

@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin Attachments</h1>
+<p>
+This plugin display the button at the bottom-right corner of the browser and lets you attach documents to a record (for example representing a wiki page).
+</p>
+
+{{=PluginAttachments('fruit',1)}}
+
+<h1>Example Source code (user code)</h1>
+
+<h2>View</h2>
+
+{{=CODE("{"+"{=PluginAttachments('tablename',record_id)}"+"}")}}
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.attachments.w2p')}}">download</a>
+

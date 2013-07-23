@@ -1,0 +1,226 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 20px 0;
+	background: #3B3B3B url(images/img1.gif) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #BABABA;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+h1 { font-size: 197%; }
+h2 { font-size: 167%; }
+h3 { font-size: 100%; font-weight: bold; }
+
+p, ul, ol {
+	margin-bottom: 1.8em;
+	line-height: 167%;
+	font-size: 100%;
+}
+
+a:link {
+	color: #94B0C8;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a:visited {
+	color: #BABABA;
+}
+
+/* Header */
+
+#header {
+	width: 740px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#logo {
+	float: left;
+	width: 206px;
+	height: 78px;
+	background: #9BAFCB;
+	border: 1px solid #000000;
+	border-right-width: 5px;
+}
+
+#logo h1 {
+	padding-top: 20px;
+	text-align: center;
+	letter-spacing: -1px;
+	font-size: 24px;
+}
+
+#logo h1 a {
+	color: #000000;
+}
+
+#logo h2 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+#logo h2 a {
+	color: #3B3B3B;
+}
+
+#logo a {
+	text-decoration: none;
+}
+
+/* Menu */
+
+#menu {
+	float: right;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 30px 0 0 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	padding: 0 25px;
+	text-decoration: none;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+#menu a:hover, #menu .active a {
+	background: #000000;
+}
+
+#menu .active a {
+}
+
+/* Splash */
+
+#splash {
+	width: 740px;
+	height: 180px;
+	margin: 0 auto;
+	background: url(images/img2.jpg) no-repeat right top;
+}
+
+#splash p {
+	padding: 100px 550px 50px 20px;
+	text-align: right;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* Page */
+
+#page {
+	width: 740px;
+	margin: 0 auto;
+}
+
+#page h1, #page h2 {
+	margin-bottom: 20px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 490px;
+	padding: 20px;
+}
+
+#content ol, #content ul {
+	margin-left: 3em;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 164px;
+	padding: 25px 20px 20px 20px;
+	background: #2F2F2F;
+	border: 1px solid #000000;
+	border-right-width: 5px;
+}
+
+#sidebar h2 {
+	padding-top: 6px;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+#sidebar h3 {
+	font-size: 77%;
+}
+
+#sidebar h3 span {
+	padding: 3px 5px;
+	background: #000000;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0 0 20px 0;
+	padding: 20px 0 0 0;
+	border-top: 1px dotted #000000;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 720px;
+	height: 15px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-top-width: 5px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+	font-size: 77%;
+}
+
+#legal {
+	float: left;
+}
+
+#links {
+	float: right;
+}

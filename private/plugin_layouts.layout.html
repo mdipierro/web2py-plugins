@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{=T.accepted_language or 'en'}}">
+  <head>
+    <title>{{=response.title or request.application}}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />     
+    {{response.files.append(URL(request.application,'static','base.css'))}}
+    {{include 'web2py_ajax.html'}}
+  </head>
+  <body>
+    <div class="wrapper">
+      <table class="layout">
+        <tr>
+          <td colspan="3"  class="header">
+            <h1>
+              {{=A(response.title or request.application, _href=URL(request.application,'default','index'))}}
+            </h1>            
+            <h3>{{=response.subtitle or ''}}</h3>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="statusbar">
+            {{='/'.join(['',request.application,request.controller,request.function]+request.args)}}
+	    {{ if 'auth' in globals():}}
+	    [ {{if not auth.user:}}
+	    <a href="{{=URL(r=request,f='user/login')}}">{{=T('login')}}</a> |
+	    <a href="{{=URL(r=request,f='user/register')}}">{{=T('register')}}</a> |
+	    <a href="{{=URL(r=request,f='user/request_reset_password')}}">{{=T('lost password')}}</a>
+	    {{else:}}
+	    {{=auth.user.first_name}} |
+	    <a href="{{=URL(r=request,f='user/logout')}}">{{=T('logout')}}</a> |
+	    <a href="{{=URL(r=request,f='user/change_password')}}">{{=T('change password')}}</a> |
+	    <a href="{{=URL(r=request,f='user/profile')}}">{{=T('edit profile')}}</a>
+	    {{pass}} ]
+	    {{pass}}
+          </td>
+        </tr>
+        <tr>
+          <td class="width10em column1">
+            {{if response.menu:}}
+            <h2>{{=T('Main Menu')}}</h2>
+            {{=MENU(response.menu)}}
+            {{pass}}
+            {{if response.menu_edit:}}
+            <h2>{{=T('Edit This App')}}</h2>
+            {{=MENU(response.menu_edit)}}
+            {{pass}}
+            <br />
+          </td>
+          <td class="expandable column2">
+            <div class="flash">{{=response.flash or ''}}</div>
+            {{include}}
+          </td>
+          <!--
+               <td class="width10em column3">
+                 <h2>Right Column</h2>
+               </td>
+          //-->
+        </tr>
+        <tr>
+          <td colspan="10" class="footer">
+            <p>
+            {{=T('Copyright')}} &copy; 2009 -
+            {{=T('Powered by')}} <a href="http://www.web2py.com">web2py</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

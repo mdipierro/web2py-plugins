@@ -1,0 +1,10 @@
+<script type="text/javascript" src="{{=URL('static',f='plugin_markitup/jquery.markitup.pack.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static',f='plugin_markitup/sets/markdown/set.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{=URL('static',f='plugin_markitup/skins/markitup/style.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{=URL('static',f='plugin_markitup/sets/markdown/style.css')}}" />
+
+<script>
+jQuery(document).ready(function() {
+  jQuery('textarea').markItUp(mySettings);
+});
+</script>

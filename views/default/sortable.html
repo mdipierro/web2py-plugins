@@ -1,0 +1,47 @@
+{{extend 'layout.html'}}
+<style>
+.sortable LI {
+   width: 200px; background: orange; color: white;
+   border: 2px solid white; padding: 5px 5px 5px 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    z-index: 2;
+}
+</style>
+
+<h1>Demo Plugin Sortable List</h1>
+{{=plugin_sortable([(f.id,f.name) for f in fruits],callback=URL(r=request,f='sort'))}}                                    
+Rearrange the items using the mouse: grab one and move it. Reload page and they stay sorted.
+
+{{import os}}
+<h1>Example Source code (user code)</h1>
+
+<h2>Model: db_custom.py</h2>
+
+{{=CODE(open(os.path.join(request.folder,'models/db_custom.py')).read())}}
+
+Notes: the 'sortable' field is used to stored a sorting index; the client field is used to store the IP address of the client so that every user sorts his/her own fruits.
+
+<h2>Controller: default.py</h2>
+
+{{=CODE("""
+def index():
+    fruits = db(my_fruits).select(orderby=db.fruit.sortable)
+    return dict(fruits = fruits)
+
+def sort():
+    plugin_sortable_sort(db.fruit,query=my_fruits))
+""".strip())}}
+
+Notes: the 'sort' action is called by the plugin via ajax when sorting the items on the screen, query is used to filter the relevant rows.
+
+<h2>View: default/index.html</h2>
+
+{{=CODE(''.join(open(os.path.join(request.folder,'views/default/index.html')).readlines()[:12]).strip(),language='html')}}
+
+Notes: all the work is doing by the last line. The function 'plugin_sortable' is defined by the plugin below. The first argument is a list of type [(id,value),...] containing the id of the items to be displayed and the text (or helper) showing the item. The 'callback' points to the action defined above.
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.sortable.w2p')}}">download</a>

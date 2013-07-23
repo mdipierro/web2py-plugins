@@ -1,0 +1,56 @@
+{{extend 'layout.html'}}
+
+<style>
+table, tr, td {
+border: 0;
+padding: 0;
+text-align: left;
+vertical-align: top;
+}
+.st_out {
+width: 90%;
+background: transparent;
+}
+.st_table {
+width: 100%;
+background: transparent;
+}
+.st_wrap, .st_in, .st_wrap_middle,.st_wrap_top, .st_wrap_bottom {
+color: black;
+padding: 5px;
+border-bottom: 5px solid black;
+border-left: 5px solid black;
+}
+.st_wrap_middle, .st_wrap_top, .st_wrap_bottom {
+background: blue;
+width: 100px;
+}
+.st_wrap {
+background: yellow;
+width: 50px;
+}
+.st_in {
+background: green;
+}
+.st_in {
+-moz-border-radius-topright: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-webkit-border-bottom-right-radius: 20px;
+}
+.st_wrap_top {
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+}
+.st_wrap_bottom {
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+}
+</style>
+
+<div style='width:90%; background: black; padding: 20px'>
+<center>
+{{=t}}
+</center>
+</div>
+

@@ -1,0 +1,187 @@
+/* spaced - a free web template by spyka webmaster
+   http://www.spyka.net
+*/
+
+/* page */
+html, * {
+	padding:0;
+	margin:0;
+}
+body {
+	background-color:#666666;
+	margin:0 auto;
+	font-size:1.0em;
+	color:#303030;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+/* headers */
+h1 {
+	font-size:3.4em;
+	text-align:left;
+	padding-top:20px;
+	padding-left:30px;
+	color:#ffffff;
+	letter-spacing:3px;
+	font-weight:normal;
+}
+h2 {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	color:#7491A1;
+}
+h3 {
+	font-size:1.3em;
+	font-weight:normal;
+	color:#333333;
+	border-bottom:1px solid #DDDDDD;
+}
+h4 {
+	background-color:#DDDDDD;
+	border-bottom:1px solid #CCCCCC;
+	padding:5px;
+	color:#999999;
+}
+
+/* paragraphs */
+p {
+	margin:2px 0 15px 0;
+	line-height:1.3em;
+}
+
+/* links */
+a {
+	color:#333333;
+	border-bottom:1px dotted #333333;
+	text-decoration:none;
+}
+a:hover {
+	color:#7491A1;
+	border-bottom:1px solid #7491A1;
+}
+div#footer a {
+	color:#ffffff;
+	text-decoration:underline;
+	border:none;
+}
+div#footer a:hover {
+	border:none;
+}
+div#sidebar ul li a { 
+	color:#999999;
+	border-bottom:1px solid #CCCCCC;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+}
+div#sidebar ul li a:hover {
+	background-color:#DDDDDD;
+}
+
+/* lists */
+ul, ol {
+	margin:0 0 5px 30px;
+}
+
+/* code */
+code {
+	display:block;
+	border:1px solid #cccccc;
+	background-color:#dddddd;
+	padding:15px;
+	margin:5px;
+}
+	
+/* container, header and nav */
+div#container {
+	background-color:#ffffff;
+	width:70%;
+	padding:0 5px;
+	margin:0 auto;
+}
+div#header {
+	background-image:url('images/headerbg.jpg');
+	background-repeat:no-repeat;
+	background-position:top right;
+	background-color:#000000;
+	height:120px;
+	padding:10px;
+}
+div#header p {
+	text-align:left;
+	padding:0 0 0 30px;
+	margin:0;
+	font-size:0.8em;
+	color:#ffffff;
+}
+div#nav {
+	background-image:url('images/navbg.jpg');
+	background-repeat:repeat-x;
+	height:71px;
+}
+div#nav ul {
+	margin:0;
+	padding:0;
+}
+div#nav ul li {
+	display:block;
+	float:left;
+}
+div#nav ul li a {
+	float:left;
+	border:none;
+	padding:25px 15px 0 15px;
+	height:46px;
+	letter-spacing:2px;
+	border-right:1px solid #999999;
+	color:#FFFFFF;
+	text-decoration:none;
+	display:block;
+}
+div#nav ul li a:hover {
+	background-color:#333333;
+}
+
+/* content */
+div#content {
+	padding:20px 10px 0 10px;
+}
+div#page {
+	width:67%;
+	float:left;
+}
+div#sidebar {
+	width:28%;
+	float:right;
+}
+div#sidebar p {
+	padding:3px 5px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+div#sidebar ul {
+	list-style:none;
+	margin:7px 12px;
+}
+div#sidebar ul li {
+	padding:3px 0;
+}
+
+/* footer */
+div#footer {
+	padding:20px 5px;
+	background-color:#636363;
+	color:#ffffff;
+}
+div#footer p {
+	font-size:0.6em;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin:0;
+	padding:5px;
+}
+
+/* generic classes */
+.bold {
+	font-weight:bold;
+}
+.clear {
+	clear:both;
+}

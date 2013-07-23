@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+<h1>Demo Plugin Sortable Table</h1>
+{{=crud.create(db.shout)}}
+
+<h2>Current shouts</h2>
+{{=plugin_jqgrid(db.shout,columns=['id','message'],height=300)}}
+
+<h1>Source code</h1>
+
+{{=CODE(''.join(open(os.path.join(request.folder,'views/default/%s.html' % request.function),'r').readlines()[:-7]))}}
+
+<h1>Download Plugin</h1>
+[<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>]

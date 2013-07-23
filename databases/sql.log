@@ -1,0 +1,245 @@
+timestamp: 2010-04-12T15:04:31.376887
+CREATE TABLE auth_user(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name CHAR(128),
+    last_name CHAR(128),
+    email CHAR(512),
+    password CHAR(512),
+    registration_key CHAR(512),
+    reset_password_key CHAR(512)
+);
+success!
+timestamp: 2010-04-12T15:04:31.385976
+CREATE TABLE auth_group(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    role CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2010-04-12T15:04:31.390294
+CREATE TABLE auth_membership(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id REFERENCES auth_user(id) ON DELETE CASCADE,
+    group_id REFERENCES auth_group(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2010-04-12T15:04:31.396639
+CREATE TABLE auth_permission(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    group_id REFERENCES auth_group(id) ON DELETE CASCADE,
+    name CHAR(512),
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2010-04-12T15:04:31.403377
+CREATE TABLE auth_event(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    time_stamp TIMESTAMP,
+    client_ip CHAR(512),
+    user_id REFERENCES auth_user(id) ON DELETE CASCADE,
+    origin CHAR(512),
+    description TEXT
+);
+success!
+timestamp: 2010-04-12T15:04:42.922545
+CREATE TABLE fruit(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    sortable INTEGER,
+    client CHAR(512),
+    name CHAR(512)
+);
+success!
+timestamp: 2010-04-12T15:04:42.933953
+CREATE TABLE preference(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    fruit REFERENCES fruit(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2010-04-12T15:04:42.943385
+CREATE TABLE shout(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    message CHAR(512),
+    client CHAR(512)
+);
+success!
+timestamp: 2010-04-12T15:04:42.951128
+CREATE TABLE plugin_attachments_attachment(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tablename CHAR(512),
+    record_id INTEGER,
+    name CHAR(512),
+    file CHAR(512),
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:42.960136
+CREATE TABLE plugin_comments_comment(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tablename CHAR(512),
+    record_id INTEGER,
+    parent_node INTEGER,
+    body CHAR(512),
+    deleted CHAR(1),
+    votes INTEGER,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:42.971007
+CREATE TABLE plugin_google_checkout_order(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id CHAR(512),
+    nature CHAR(512),
+    order_id CHAR(512),
+    cart_xml TEXT,
+    state CHAR(512),
+    payment CHAR(512),
+    currency CHAR(512),
+    total DOUBLE,
+    authorized DOUBLE,
+    charges DOUBLE,
+    charges_pending DOUBLE,
+    refunds DOUBLE,
+    refunds_pending DOUBLE,
+    chargebacks DOUBLE,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:42.981221
+CREATE TABLE plugin_google_checkout_purchase(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cart_id CHAR(512),
+    ordered CHAR(1),
+    order_id CHAR(512),
+    item_id CHAR(512),
+    name CHAR(512),
+    description CHAR(512),
+    unit_price DOUBLE,
+    quantity INTEGER,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:42.990838
+CREATE TABLE plugin_google_checkout_message(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    order_id CHAR(512),
+    serial CHAR(512),
+    tag CHAR(512),
+    input_xml TEXT,
+    output_xml TEXT,
+    error CHAR(512),
+    description CHAR(512),
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:42.999282
+CREATE TABLE plugin_locking_lock(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tablename CHAR(512),
+    record_id INTEGER,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:43.011660
+CREATE TABLE plugin_rating_master(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tablename CHAR(512),
+    record_id INTEGER,
+    rating DOUBLE,
+    counter INTEGER
+);
+success!
+timestamp: 2010-04-12T15:04:43.017183
+CREATE TABLE plugin_rating_aux(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    master REFERENCES plugin_rating_master(id) ON DELETE CASCADE,
+    rating DOUBLE,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2010-04-12T15:04:43.023248
+CREATE TABLE plugin_simple_comments_comment(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tablename CHAR(512),
+    record_id INTEGER,
+    body CHAR(512),
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:43.033508
+CREATE TABLE plugin_tagging_tag(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name CHAR(512),
+    links INTEGER,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP
+);
+success!
+timestamp: 2010-04-12T15:04:43.038781
+CREATE TABLE plugin_tagging_link(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tag REFERENCES plugin_tagging_tag(id) ON DELETE CASCADE,
+    table_name CHAR(512),
+    record_id INTEGER
+);
+success!
+timestamp: 2010-04-12T15:04:43.045419
+CREATE TABLE plugin_tagging_subscription(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    auth_user REFERENCES auth_user(id) ON DELETE CASCADE,
+    tag REFERENCES plugin_tagging_tag(id) ON DELETE CASCADE
+);
+success!
+timestamp: 2010-05-31T10:30:03.866949
+CREATE TABLE plugin_wiki_page(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    slug CHAR(512),
+    title CHAR(512),
+    active CHAR(1),
+    public CHAR(1),
+    body TEXT,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2010-05-31T10:30:03.888609
+CREATE TABLE plugin_wiki_page_archive(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    current_record REFERENCES plugin_wiki_page(id) ON DELETE CASCADE,
+    slug CHAR(512),
+    title CHAR(512),
+    active CHAR(1),
+    public CHAR(1),
+    body TEXT,
+    created_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    modified_by REFERENCES auth_user(id) ON DELETE CASCADE,
+    modified_on TIMESTAMP
+);
+success!
+timestamp: 2013-01-07T22:23:44.487430
+ALTER TABLE auth_user ADD registration_id CHAR(512);
+timestamp: 2013-01-07T22:23:44.507680
+CREATE TABLE auth_cas(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER REFERENCES auth_user (id) ON DELETE CASCADE,
+    created_on TIMESTAMP,
+    service CHAR(512),
+    ticket CHAR(512),
+    renew CHAR(1)
+);
+success!

@@ -1,0 +1,356 @@
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #EFEFEF url(images/img01.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #4D4D4D;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #CC0001;
+	color: #BF4D36;
+}
+
+a:hover {
+	background: none;
+}
+
+/* Header */
+
+#header {
+	width: 900px;
+	height: 215px;
+	margin: 0 auto;
+	background: url(images/img02.jpg) no-repeat left top;
+}
+
+/* Logo */
+
+#logo {
+	width: 600px;
+	padding: 140px 0 0 100px;
+	color: #BF4D02;
+}
+
+#logo h1, #logo p {
+}
+
+#logo h1 {
+	padding: 0;
+	margin-right: 10px;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.8em;
+	font-style: italic;
+}
+
+
+#logo p {
+	margin: 0;
+	padding: 0;
+	font: normal 13px Georgia, "Times New Roman", Times, serif;
+	color: #7B5C02;
+}
+
+#logo p a {
+	color: #7B5C02;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #BF4D02;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 230px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 70px 0 0 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 210px;
+	border: none;
+	text-transform: lowercase;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 910px;
+	height: 37px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	padding: 7px 25px 7px 20px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+}
+
+#menu a:hover {
+	background: url(images/img03.jpg) no-repeat center top;
+	text-decoration: none;
+}
+
+#menu .first {
+	background: url(images/img03.jpg) no-repeat center top;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	background: url(images/img04.jpg) repeat-y left top;
+}
+
+#wrapper-top {
+	width: 900px;
+	background: url(images/img07.jpg) no-repeat left top;
+}
+
+#wrapper-btm {
+	width: 900px;
+	background: url(images/img05.jpg) no-repeat left bottom;
+}
+
+
+
+/* Page */
+
+#page {
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 550px;
+	margin: 0;
+	padding: 0;
+}
+
+.post {
+}
+
+.post .title {
+	color: #967001;
+	border-bottom: 1px #A9A9A9 dashed;
+}
+
+.post .title a {
+	background: none;
+	color: #967001;
+	border: none;
+}
+
+.post .title a:hover {
+	text-decoration: underline;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+	padding: 3px 0px;
+	border-top: 1px #A9A9A9 dashed;
+	border-bottom: 1px #A9A9A9 dashed;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.post .entry {
+	padding: 10px 0 5px 0;
+	text-align: justify;
+}
+
+.post a {
+	color: #967001;
+	border-bottom: 1px #967001 dotted;
+}
+
+.post .meta a {
+	font-weight: bold;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 260px;
+	margin: 0;
+	padding: 0 0 0 35px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	line-height: 35px;
+	border-bottom: 1px dashed #590000;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	letter-spacing: -.5px;
+	color: #4D4D4D;
+}
+
+#sidebar p {
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+#sidebar a {
+	color: #BF4D36;
+	border: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+	color: #787878;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	width: 910px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 40px 0 15px 0;
+	background: #4D4D4D url(images/img06.jpg) repeat-x left top;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#footer a {
+	color: #FF833B;
+	border-bottom: 1px #FF833B dotted;
+}

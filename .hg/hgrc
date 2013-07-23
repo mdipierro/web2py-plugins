@@ -1,0 +1,8 @@
+[paths]
+default = https://mdipierro%%40cs.depaul.edu:QP3zn8wn7wH9@web2py-plugins.googlecode.com/hg/
+
+
+[auth]
+default.prefix = https://web2py.googlecode.com/hg/
+default.username = mdipierro@cs.depaul.edu
+default.password = QP3zn8wn7wH9

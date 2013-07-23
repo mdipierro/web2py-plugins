@@ -1,0 +1,35 @@
+{{extend 'layout.html'}}
+{{include 'plugin_markitup/markitup.html'}}
+{{if form:}}
+<div id="editor">
+{{=form}}
+{{if page:}}{{=PluginAttachments('page',page.id)}}{{pass}}
+{{if history:}}
+<h2>History</h2>
+<ul>
+  {{for item in history:}}
+  <li>{{='%(modified_on)s by user %(modified_by)s "%(title)s"' % item}}</li>
+  {{pass}}
+</ul>
+{{pass}}
+<hr/>
+</div>
+{{if page and not form.errors:}}<script>jQuery('#editor').hide();</script>{{pass}}
+{{if page:}}
+<div style="padding: 0 10px 0 10px; position: fixed; right:0; bottom:30px; background: #999; color: white; z-index: 100; clear: both;">
+<a href="#" style="color:white" onclick="jQuery('#editor').slideToggle();return false;">edit</a>
+</div>
+{{pass}}
+{{pass}}
+
+{{if page:}}
+<h2>{{=page.title}}</h2>
+{{=plugin_wiki_render(page.body)}}
+<div class="right">{{=prettydate(page.modified_on)}}</div>
+{{else:}}
+<center>
+  <h1>{{=T("The document you requested does not exist")}}</h1>
+</center>
+{{pass}}
+<br/><br/>
+

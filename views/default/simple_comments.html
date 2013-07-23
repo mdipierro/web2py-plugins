@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin {{=request.function}}</h1>
+
+<p>
+For non-threaded comments as listed at the bottom of the page
+</p>
+
+<h2>Usage</h2>
+
+{{=CODE('{'+'{=plugin_simple_comments("tablename",record_id)}'+'}')}}
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>
+
+<h1>Comments</h1>
+
+{{=plugin_simple_comments('fruit',1)}}

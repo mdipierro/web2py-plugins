@@ -1,0 +1,191 @@
+/*
+Template Design by TheWebhub.com
+http://www.thewebhub.com
+Released for free under a Creative Commons Attribution-Share Alike 3.0 Philippines
+*/
+
+
+/** Common Styles */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background: #393939;
+	line-height: 25px;
+	text-align: justify;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+h1, h2, h3 {
+	margin-top: 1.5em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p, ul, ol {
+	margin-top: 1.5em;
+}
+
+ul, ol {
+	margin-left: 3em;
+}
+
+blockquote {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+a {
+	color: #CB347E;
+}
+
+/** Header Style Starts Here */
+
+#header {
+	width: 800px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 40px 0 10px 55px;
+	background: url(images/image08.gif) no-repeat left 90%;
+	text-transform: lowercase;
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+/** Menu Style Starts Here */
+
+
+#menu {
+	width: 760px;
+	height: 43px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background: url(images/image01.jpg) no-repeat left top;
+}
+
+#menu ul {
+	margin: 0;
+	list-style: none;
+	padding-top: 10px;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 0 20px;
+	background: url(images/image06.gif) no-repeat right 50%;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+}
+
+#menu .first a  {
+	padding-left: 0;
+}
+
+/** Page Style Starts Here */
+
+#page {
+	width: 800px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(images/image05.jpg) repeat-y;
+}
+
+#page-top {
+	background: url(images/image03.jpg) no-repeat left top;
+}
+
+#page-bottom {
+	background: url(images/image04.jpg) no-repeat left bottom;
+}
+
+#content {
+	float: right;
+	width: 420px;
+	padding: 40px 50px 30px 60px;
+}
+
+#content h2 {
+	margin: 0;
+	padding: 20px 0 10px 0;
+	border-bottom: 1px dotted #CFCFCF;
+	text-transform: lowercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#sidebar {
+	float: left;
+	width: 250px;
+	padding: 20px 0 0 20px;
+}
+
+#sidebar h2 {
+	margin: 0;
+	padding: 20px 0 10px 0;
+	border-bottom: 1px dotted #CFCFCF;
+	text-transform: lowercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px dotted #CFCFCF;
+}
+/** Footer Style Starts Here */
+
+#footer {
+	width: 800px;
+	height: 43px;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	background: url(images/image02.jpg) no-repeat left top;
+}
+
+#footer p {
+	margin: 0;
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+

@@ -1,0 +1,31 @@
+{{extend 'layout.html'}}
+
+<h1>About Plugin {{=request.function}}</h1>
+
+<p>
+This is a minimalist modal window like this: 
+{{mymodal=PluginMModal('Title','content')}} {{=mymodal}} {{=mymodal.link('click me')}}
+</p>
+
+To use it:
+Create an instance of the plugin:
+<pre>
+{{="{"+"{a=PluginMModal(title='Hello World',content='give this a try!',close='close',width=70,height=70)}"+"}"}}
+</pre>
+
+Then print the instance in somewhere in the page                                                               
+<pre>
+{{="{"+"{=a}"+"}"}}
+</pre>                                                                                                     
+
+To generate a link that opens the modal                                                                        
+<pre>
+{{="{"+"{=a.link('click me to open it')}"+"}"}}  
+</pre>
+
+<h1>Required plugin (including plugin source code)</h1>
+
+You need this. Just upload it through the web2py plugin interface for your app.
+
+<a href="{{=URL(r=request,c='static',f='web2py.plugin.%s.w2p' % request.function)}}">download</a>
+
